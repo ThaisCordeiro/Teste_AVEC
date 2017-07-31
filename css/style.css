@@ -32,6 +32,7 @@ section {
   background-color: #FFF;
   border: none;
   float: right;
+  padding: 10px;
 }
 .navbar-header #btn_bars a {
   display: block;
