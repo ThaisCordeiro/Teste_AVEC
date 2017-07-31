@@ -1,0 +1,101 @@
+/*==============================
+=            Banner            =
+==============================*/
+
+#banner {
+	position: relative;
+	padding: 130px 0px;
+	overflow: hidden;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(54, 11, 103, 0.25);
+		z-index: 1;
+	}
+
+	figure {
+		position: absolute;
+		top: 0px;
+		right: 0px;	
+		bottom: 0px;	
+
+		img {
+			min-height: 100%;
+			min-width: 100%;
+		}
+	}
+}
+
+#banner_content {
+	position: relative;
+	color: #FFF;
+	z-index: 2;
+	padding: 30px;
+    max-width: 950px;
+    margin: 0 auto;
+	
+	p:first-child {
+		font-family: 'Raleway', sans-serif;
+		font-size: 42px;
+		line-height: 50px;
+	}
+
+	p {
+		font-size: 16px;
+	}
+
+	.btn-outline-rounded {
+	    padding: 10px 20px;
+	    display: inline-block;
+	    text-decoration: none;
+	    color: #FFF;
+	    background-color: transparent;
+	    border: 2px solid #FFF;
+	    border-radius: 25px;
+	    margin: 10px 4px;
+	    font-weight: bold;
+	    font-size: 9px;
+	    letter-spacing: 2px;
+
+		&:hover {
+			background-color: #FFF;
+			color: #000;			
+		}
+	}
+}
+ 
+/*=====================================
+=       Banner Media Queries          =
+=====================================*/
+
+// screen ≥ 1200 px
+@media (min-width: 1200px) {
+	#banner {
+		figure {
+			left: 0px;
+		}
+	}
+
+	#banner_content {
+
+		p:first-child {
+			font-size: 46px;
+		}
+
+		p {
+			font-size: 33px;
+		}
+
+		.btn-outline-rounded {
+			margin: 10px 20px;
+			font-size: 12px;
+			letter-spacing: 3px;
+		}
+	}
+}

@@ -1,0 +1,291 @@
+body {
+  font-family: 'Raleway', sans-serif;
+}
+section {
+  margin: 50px 0px 25px 0;
+}
+/*=============================================
+=                    Header                   =
+=============================================*/
+#strip {
+  height: 10px;
+  background: #8585C1;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #8585C1, #d970c1);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #8585C1, #d970c1);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #8585C1, #d970c1);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #8585C1, #d970c1);
+  /* Standard syntax (must be last) */
+}
+.navbar {
+  height: 120px;
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+.container-header {
+  padding: 45px 0px 25px;
+}
+.navbar-header #btn_bars {
+  background-color: #FFF;
+  border: none;
+  float: right;
+  padding: 10px;
+}
+.navbar-header #btn_bars i {
+  font-size: 26px;
+  color: #7d73a0;
+}
+.navbar-brand {
+  padding: 0px;
+}
+.navbar-brand img {
+  height: 50px;
+}
+#menu {
+  display: none;
+}
+#menu.toggled {
+  z-index: 2;
+  background: white;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  width: 210px;
+  box-shadow: 1px 2px 5px 0 rgba(0, 0, 0, 0.16);
+  display: block;
+}
+#menu ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+#menu li.active a {
+  background: #7d73a0;
+  color: #fff;
+}
+#menu a {
+  color: #7d73a0;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+}
+#menu a:hover {
+  background: #7d73a0;
+  color: #fff;
+}
+/*============================================
+=            Header Media Queries            =
+============================================*/
+@media (min-width: 768px) {
+  .container-header {
+    padding: 40px 0px 20px;
+  }
+  .navbar-brand img {
+    width: 190px;
+  }
+  .navbar-header #btn_bars {
+    display: none;
+  }
+  #menu {
+    display: block;
+  }
+  #menu ul {
+    float: right;
+  }
+  #menu ul li {
+    display: inline-block;
+    padding: 14px 0px;
+  }
+  #menu ul li.active a {
+    background: #7d73a0;
+    color: #fff;
+  }
+  #menu a {
+    padding: 5px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar-brand img {
+    width: 200px;
+  }
+}
+/*==============================
+=            Banner            =
+==============================*/
+#banner {
+  position: relative;
+  padding: 130px 0px;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+}
+#banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(54, 11, 103, 0.25);
+  z-index: 1;
+}
+#banner figure {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+#banner figure img {
+  min-height: 100%;
+  min-width: 100%;
+}
+#banner_content {
+  position: relative;
+  color: #FFF;
+  z-index: 2;
+  padding: 30px;
+  max-width: 950px;
+  margin: 0 auto;
+}
+#banner_content p:first-child {
+  font-family: 'Raleway', sans-serif;
+  font-size: 42px;
+  line-height: 50px;
+}
+#banner_content p {
+  font-size: 16px;
+}
+#banner_content .btn-outline-rounded {
+  padding: 10px 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  background-color: transparent;
+  border: 2px solid #FFF;
+  border-radius: 25px;
+  margin: 10px 4px;
+  font-weight: bold;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+#banner_content .btn-outline-rounded:hover {
+  background-color: #FFF;
+  color: #000;
+}
+/*=====================================
+=       Banner Media Queries          =
+=====================================*/
+@media (min-width: 1200px) {
+  #banner figure {
+    left: 0px;
+  }
+  #banner_content p:first-child {
+    font-size: 46px;
+  }
+  #banner_content p {
+    font-size: 33px;
+  }
+  #banner_content .btn-outline-rounded {
+    margin: 10px 20px;
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+}
+/*=================================================
+=            Section online scheduling            =
+=================================================*/
+#scheduling h1,
+#scheduling p {
+  text-align: center;
+}
+#main_text {
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+#main_text h1 {
+  margin-bottom: 15px;
+  color: #8585c1;
+}
+#scheduling_content {
+  margin-top: 50px;
+}
+#scheduling_content .scheduling-items {
+  width: 230px;
+  margin: 50px auto;
+  display: block;
+}
+#scheduling_content .scheduling-items > p {
+  color: #8585c1;
+}
+#scheduling_content .scheduling-items .text-items {
+  padding: 0px 5px;
+  height: 115px;
+  margin-bottom: 10px;
+}
+#scheduling_content .scheduling-items .btn-rounded {
+  background-color: #8585c1;
+  border: 2px solid #8585c1;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  display: block;
+  padding: 9px 14px;
+  width: 120px;
+  text-decoration: none;
+  color: #FFF;
+  text-align: center;
+}
+#scheduling_content .scheduling-items .btn-rounded:hover {
+  background-color: #FFF;
+  color: #8585c1;
+}
+/*================================================
+=            Scheduling Media Queries            =
+================================================*/
+@media (min-width: 768px) {
+  #main_text {
+    width: 440px;
+  }
+  #scheduling_content {
+    display: flex;
+    justify-content: space-around;
+  }
+  #scheduling_content .scheduling-items {
+    margin-top: 0px;
+  }
+}
+footer {
+  background-color: #7d73a0;
+  padding: 80px 0px;
+  margin-top: 50px;
+  color: #FFF;
+}
+footer p {
+  text-align: center;
+}
+footer div {
+  text-align: center;
+  margin-top: 20px;
+}
+footer div a {
+  text-decoration: none;
+  color: #FFF;
+  font-size: 20px;
+  padding: 8px;
+}
+footer div:hover a {
+  color: rgba(8, 0, 26, 0.49);
+}
+footer div:hover a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
